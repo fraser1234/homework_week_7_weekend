@@ -32,4 +32,10 @@ public class ShopItemsTest {
     public void canGetSellPrice(){
         assertEquals(15, guitarStrings.getSellPrice(), 0.001);
     }
+
+    @Test
+    public void canGetMarkUp(){
+        assertEquals(200, drumSticks.calculateMarkup(), 0.001);
+    }
+
 }

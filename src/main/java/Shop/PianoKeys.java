@@ -7,6 +7,8 @@ public class PianoKeys extends ShopItems {
 
     @Override
     public double calculateMarkup() {
-        return 0;
+        double margin = this.getSellPrice() - this.getBoughtPrice();
+        double markup = (margin / this.getBoughtPrice()) * 100;
+        return markup;
     }
 }

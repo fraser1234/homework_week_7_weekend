@@ -1,6 +1,8 @@
 package Instrumental;
 
-public abstract class Instrument implements IPlay{
+import Shop.ISell;
+
+public abstract class Instrument implements IPlay, ISell{
 
     private String material;
     private String colour;
@@ -49,5 +51,8 @@ public abstract class Instrument implements IPlay{
     }
 
     public abstract String play(String message);
+
+    public abstract double calculateMarkup();
+
 
 }

@@ -20,4 +20,11 @@ public class Guitar extends Instrument {
     public String play(String message) {
         return "The song playing is: " + message;
     }
+
+    @Override
+    public double calculateMarkup() {
+        double margin = this.getSellPrice() - this.getBoughtPrice();
+        double markup = (margin / this.getBoughtPrice()) * 100;
+        return markup;
+    }
 }
