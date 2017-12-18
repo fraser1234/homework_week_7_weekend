@@ -41,7 +41,7 @@ public class ShopTest {
 
     @Test
     public void canAddStock(){
-        
+
     }
 
 
